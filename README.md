@@ -1,1 +1,1 @@
-# -starter-briefcase-react
+# starter-briefcase-react
