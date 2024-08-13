@@ -1,27 +1,10 @@
 import React from "react";
 import { useLanguage } from "../../hook/lenguage";
-import { useTheme } from "../../hook/theme";
-import { useNavigate } from "react-router-dom";
 import PageWrapperCustom from "../../components/common/page/custom/PageWrapperCustom";
 import fondo from "../../assets/fondo.webp";
 
 const HomeScreen: React.FC = () => {
     const { translations } = useLanguage();
-    const { isDarkTheme } = useTheme();
-
-    const navigate = useNavigate();
-
-    const handleNavigateToPresentation = () => {
-        navigate("/presentacion");
-    };
-
-    const handleNavigateToWorkExperience = () => {
-        navigate("/experience");
-    };
-
-    const handleNavigateToStudies = () => {
-        navigate("/studies");
-    };
 
     return (
         <PageWrapperCustom>
